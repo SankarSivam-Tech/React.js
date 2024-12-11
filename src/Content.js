@@ -2,6 +2,7 @@ import React from "react";
 import StateHook from "./StateHook/statehook";
 import { useState } from "react";
 import List from "./To-Do-List/list";
+import PdfGenerator from "./PDF generation/pdf";
 
 const Content = () => {
   const [code, setCode] = useState("earn");
@@ -69,6 +70,8 @@ const Content = () => {
       <br />
 
       <List/>
+
+      <PdfGenerator/>
     </main>
   );
 };
