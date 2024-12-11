@@ -64,14 +64,14 @@ const Content = () => {
       {/* state hook */}
       <StateHook />
 
-      <p>lets {code} together</p>
-      <button onClick={codeChange}>codeChange</button>
+      {/* <p>lets {code} together</p>
+      <button onClick={codeChange}>codeChange</button> */}
 
       <br />
 
       <List/>
-
-      <PdfGenerator/>
+{/* 
+      <PdfGenerator/> */}
     </main>
   );
 };
