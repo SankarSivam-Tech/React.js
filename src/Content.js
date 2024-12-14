@@ -4,7 +4,7 @@ import { useState } from "react";
 import List from "./To-Do-List/list";
 import PdfGenerator from "./PDF generation/pdf";
 
-const Content = () => {
+const Content = ({ items, handleCheckbox, handleDelete_btn }) => {
   const [code, setCode] = useState("earn");
 
   const handleSubmit_btn = () => {
@@ -69,8 +69,12 @@ const Content = () => {
 
       <br />
 
-      <List/>
-{/* 
+      <List
+        items={items}
+        handleCheckbox={handleCheckbox}
+        handleDelete_btn={handleDelete_btn}
+      />
+      {/* 
       <PdfGenerator/> */}
     </main>
   );
